@@ -37,7 +37,7 @@ else:
 
 difference_percentage = round((price_difference/day_before_closing_price) * 100)
 print(difference_percentage)
-if abs(difference_percentage) > 1:
+if abs(difference_percentage) > 5:
     news_params = {
         "apiKey": news_api_key,
         "q": COMPANY_NAME,
